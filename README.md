@@ -1,3 +1,3 @@
 # linlin-vim-setting
 
-put this in ~/.vim-git
+put this directory to ~/.vim-git
