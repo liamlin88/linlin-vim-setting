@@ -13,6 +13,10 @@ nnoremap <C-H> <C-W>h
 map <C-Left> gT 
 map <C-Right> gt 
 
+" Clipboard
+noremap <C-y> "+y
+noremap <C-p> "+p
+
 set clipboard=unnamed
 " ======================================================================================
 " For easymotion
@@ -32,11 +36,24 @@ map <C-b> :NERDTreeToggle<CR>
 
 
 " ======================================================================================
-" Enable folding
-" set foldmethod=indent
-" set foldlevel=99
+" set Python 
+" enable syntax highlighting
+syntax enable
 
-" nnoremap <space> za
+" show line numbers
+set number
+" set tabs to have 4 spaces
+set ts=4
+" indent when moving to the next line while writing code
+set autoindent
+" expand tabs into spaces
+set expandtab
+" when using the >> or << commands, shift lines by 4 spaces
+set shiftwidth=4
+" show the matching part of the pair for [] {} and ()
+set showmatch
+" enable all Python syntax highlighting features
+let python_highlight_all = 1
 
 " ======================================================================================
 " For vundle (Plugin manager)
